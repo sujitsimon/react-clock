@@ -1,2 +1,2 @@
 # react-clock
-React Clock 
+A customizable Flip-Clock Widget
