@@ -21,7 +21,7 @@
     perspective: 200px;
     font-family: 'Modak';
     font-weight: bold;
-    /* margin: 1% 1%; */
+    margin: 1% 0.5%;
 }
 
 .flip-back {
@@ -91,10 +91,10 @@
     transform: rotateX(0deg);
     animation-name: animation-top;
     animation-timing-function: var(--animation-timing-function);
-    animation-duration: 0.8s;
+    animation-duration: 0.5s;
     animation-direction: normal;
     animation-fill-mode: forwards;
-    animation-delay: 0.2s;
+    /* animation-delay: 0.2s; */
     animation-iteration-count: 1;
 }
 
@@ -102,8 +102,8 @@
     transform: rotateX(-90deg);
     animation-name: animation-bottom;
     animation-timing-function: var(--animation-timing-function);
-    animation-duration: 0.8s;
-    animation-delay: 0.2s;
+    animation-duration: 0.5s;
+    /* animation-delay: 0.2s; */
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;
