@@ -1,0 +1,126 @@
+:root {
+    --flip-height : 100px;
+    --flip-width : calc(var(--flip-height) * 0.7);
+    --font-size: calc(var(--flip-height) * 0.8);
+    --border-radius: calc(var(--flip-height) * 0.1);
+    --animation-timing-function: ease-in;
+    --background-color: #241623;
+}
+
+@font-face {
+    font-family: "Regular";   /*Can be any text*/
+    src: local("Modak"),
+      url("../../font/Modak-Regular.ttf") format("truetype");
+}
+
+.flip-clock-box {
+    height: var(--flip-height);
+    width: var(--flip-width);
+    /* border: 1px solid black; */
+    border-radius: var(--border-radius);
+    perspective: 200px;
+    font-family: 'Modak';
+    font-weight: bold;
+    /* margin: 1% 1%; */
+}
+
+.flip-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--flip-height);
+    width: var(--flip-width);
+    font-size: var(--font-size);
+    border-radius: var(--border-radius);
+}
+
+.flip-back {
+    background-color: var(--background-color);
+    color: white;
+}
+.flipper-top, .flipper-center, .flipper-bottom {
+    background-color: var(--background-color);
+    color: white;
+}
+
+.flipper-top, .flipper-center, .flipper-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--flip-height);
+    width: var(--flip-width);
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size);
+    margin: 0;
+    /* border: 1px solid black; */
+    border-radius: var(--border-radius);
+}
+
+.flipper-top-wrapper, .flipper-center-wrapper, .flipper-bottom-wrapper {
+    height: calc(var(--flip-height) * 0.5);
+    width: var(--flip-width);
+}
+
+.flipper-top-wrapper {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+.flipper-bottom, .flipper-center {
+    position: absolute;
+    top: calc(var(--flip-height) * 0.5 * -1);
+    margin: 0px;
+}
+
+.flipper-bottom-wrapper, .flipper-center-wrapper {
+    position: absolute;
+    top: calc(var(--flip-height) * 0.5);
+    overflow: hidden;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.flip-animation-top {
+    transform: rotateX(0deg);
+    animation-name: animation-top;
+    animation-timing-function: var(--animation-timing-function);
+    animation-duration: 0.8s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+    animation-iteration-count: 1;
+}
+
+.flip-animation-bottom {
+    transform: rotateX(-90deg);
+    animation-name: animation-bottom;
+    animation-timing-function: var(--animation-timing-function);
+    animation-duration: 0.8s;
+    animation-delay: 0.2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation-top {
+    0% {
+        transform: rotateX(0deg);
+    } 50%, 100% {
+        transform: rotateX(90deg);
+    }
+}
+
+@keyframes animation-bottom {
+    0%, 50% {
+        transform: rotateX(-90deg);
+    } 100% {
+        transform: rotateX(0deg);
+    }
+}
