@@ -5,6 +5,7 @@
     --border-radius: calc(var(--flip-height) * 0.1);
     --animation-timing-function: ease-in;
     --background-color: #241623;
+    --font-color: #fff;
 }
 
 @font-face {
@@ -36,11 +37,11 @@
 
 .flip-back {
     background-color: var(--background-color);
-    color: white;
+    color: var(--font-color);
 }
 .flipper-top, .flipper-center, .flipper-bottom {
     background-color: var(--background-color);
-    color: white;
+    color: var(--font-color);
 }
 
 .flipper-top, .flipper-center, .flipper-bottom {
@@ -91,7 +92,7 @@
     transform: rotateX(0deg);
     animation-name: animation-top;
     animation-timing-function: var(--animation-timing-function);
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
     animation-direction: normal;
     animation-fill-mode: forwards;
     /* animation-delay: 0.2s; */
@@ -102,7 +103,7 @@
     transform: rotateX(-90deg);
     animation-name: animation-bottom;
     animation-timing-function: var(--animation-timing-function);
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
     /* animation-delay: 0.2s; */
     animation-iteration-count: 1;
     animation-direction: normal;

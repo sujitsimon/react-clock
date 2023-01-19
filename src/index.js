@@ -9,7 +9,7 @@ import Clock from './component/Clock/Clock';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Clock/>
+    <Clock config={{height: '100px', backgroundColor: '#241623', textColor: '#fff'}}/>
   </React.StrictMode>
 );
 
