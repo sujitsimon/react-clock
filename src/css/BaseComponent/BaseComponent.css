@@ -33,13 +33,6 @@
     width: var(--flip-width);
     font-size: var(--font-size);
     border-radius: var(--border-radius);
-}
-
-.flip-back {
-    background-color: var(--background-color);
-    color: var(--font-color);
-}
-.flipper-top, .flipper-center, .flipper-bottom {
     background-color: var(--background-color);
     color: var(--font-color);
 }
@@ -58,6 +51,8 @@
     margin: 0;
     /* border: 1px solid black; */
     border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    color: var(--font-color);
 }
 
 .flipper-top-wrapper, .flipper-center-wrapper, .flipper-bottom-wrapper {
@@ -81,11 +76,6 @@
     position: absolute;
     top: calc(var(--flip-height) * 0.5);
     overflow: hidden;
-}
-
-
-.hidden {
-    display: none;
 }
 
 .flip-animation-top {

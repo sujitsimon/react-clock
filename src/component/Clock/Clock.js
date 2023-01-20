@@ -22,7 +22,7 @@ export default function Clock(props) {
             config.current = {...config.current, ...props.config};
             intermediateHeight.current = {
                                             height: (parseInt(props.config.height.slice(0, -2)) * 0.75).toFixed(0)+"px",
-                                            timeFormatHeight: (parseInt(props.config.height.slice(0, -2)) * 0.2).toFixed(0)+"px",
+                                            timeFormatHeight: (parseInt(props.config.height.slice(0, -2)) * 0.5).toFixed(0)+"px",
                                         };
         }
     }, [props.config]);
