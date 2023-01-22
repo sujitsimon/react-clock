@@ -1,6 +1,6 @@
 {
   "name": "@sujitsimon/react-flipclock",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "author": "Sujit Simon",
   "description": "React Flip Clock widget for your react-app",
