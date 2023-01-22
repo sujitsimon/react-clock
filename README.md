@@ -20,14 +20,13 @@ Clone react-clock
 Install react-flip-clock with npm
 
 ```bash
-  cd react-flip-clock
-  npm install
+  npm i @sujitsimon/react-flipclock
 ```
     
 ## Usage/Examples
 
 ```javascript
-import Clock from './component/Clock/Clock';
+import { Clock } from '@sujitsimon/react-flipclock';
 
 function App() {
   return <Clock config={{height: '100px', backgroundColor: '#241623', textColor: '#fff'}}/>

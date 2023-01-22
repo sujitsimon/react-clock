@@ -1,8 +1,9 @@
 {
-  "name": "react-flip-clock",
+  "name": "@sujitsimon/react-flipclock",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "author": "Sujit Simon",
+  "description": "React Flip Clock widget for your react-app",
   "keywords": [
     "react-flip-clock",
     "flip-clock",
@@ -10,7 +11,13 @@
     "stopwatch",
     "clock"
   ],
-  "main": "main.js",
+  "main": "dist/main.js",
+  "module": "dist/main.js",
+  "files": [ "dist", "README.md" ],
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/sujitsimon/react-flip-clock.git"
+  },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.5",
