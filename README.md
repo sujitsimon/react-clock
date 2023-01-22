@@ -17,10 +17,10 @@ Clone react-clock
 ```
 ## Installation
 
-Install react-clock with npm
+Install react-flip-clock with npm
 
 ```bash
-  cd react-clock
+  cd react-flip-clock
   npm install
 ```
     
