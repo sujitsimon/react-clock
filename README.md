@@ -13,7 +13,7 @@ A simple react-flip-clock widget with customizaion
 Clone react-clock
 
 ```bash
-  git clone https://github.com/sujitsimon/react-clock.git
+  git clone https://github.com/sujitsimon/react-flip-clock.git
 ```
 ## Installation
 
