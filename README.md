@@ -17,7 +17,6 @@ Clone react-clock
 ```
 ## Installation
 
-
 Install react-clock with npm
 
 ```bash
@@ -34,7 +33,9 @@ function App() {
   return <Clock config={{height: '100px', backgroundColor: '#241623', textColor: '#fff'}}/>
 }
 ```
+## Demo
 
+![](https://github.com/sujitsimon/react-clock/blob/main/screenshots/react-clock.gif)
 
 ## API Reference
 
@@ -50,5 +51,4 @@ function App() {
 | `backgroundColor` | `string` |  background hex color code. **Default:** `#241623`|
 | `textColor` | `string` |  text hex color code. **Default:** `#FFFFFF`|
 | `format` | `string` |  `12h` or `24h` **Default:** `12h`|
-
 
