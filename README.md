@@ -52,3 +52,33 @@ function App() {
 | `textColor` | `string` |  text hex color code. **Default:** `#FFFFFF`|
 | `format` | `string` |  `12h` or `24h` **Default:** `12h`|
 
+#### Countdown Timer API
+
+```javascript
+  <CountDownTimer config={{height: '100px', backgroundColor: '#241623', textColor: '#fff'}}
+                  countDownTime={{hours: 0, minutes: 0, seconds: 10}}
+                  onCountDownComplete={()=> {console.log('Timer Complete')}}/>
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `height` | `string` |  height of clock element. **Default:** `100px`|
+| `backgroundColor` | `string` |  background hex color code. **Default:** `#241623`|
+| `textColor` | `string` |  text hex color code. **Default:** `#FFFFFF`|
+| `countDownTime` | `object` |  **Mandatory**:`{hours: number, minutes: number, seconds: number}`|
+| `onCountDownComplete` | `callback` |  *Callback function* on Countdown timer Complete|
+
+
+#### StopWatch API
+
+```javascript
+  <StopWatch config={{height: '100px', backgroundColor: '#241623', textColor: '#fff'}} onTimerExit={(s)=> {console.log('Timer Exit', s)}}/>
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `height` | `string` |  height of clock element. **Default:** `100px`|
+| `backgroundColor` | `string` |  background hex color code. **Default:** `#241623`|
+| `textColor` | `string` |  text hex color code. **Default:** `#FFFFFF`|
+| `stopTimer` | `boolean` |  stop timer|
+| `onTimerExit` | `callback` |  *Callback function* on *stopTimer* is called. Returns *elapsed_time* in *ms*|
