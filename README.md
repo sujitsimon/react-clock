@@ -40,14 +40,15 @@ function App() {
 
 #### Clock API
 
-```http
+```javascript
   <Clock config={{height: '100px', backgroundColor: '#241623', textColor: '#fff'}}/>
 ```
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `height` | `string` |  height of clock element. **Default** "100px"|
-| `backgroundColor` | `string` |  background hex color code. **Default** ![#241623](https://via.placeholder.com/10/241623?text=+) #241623|
-| `textColor` | `string` |  text hex color code. **Default** ![#FFFFFF](https://via.placeholder.com/10/ffffff?text=+) #FFFFFF|
+| `height` | `string` |  height of clock element. **Default:** `100px`|
+| `backgroundColor` | `string` |  background hex color code. **Default:** `#241623`|
+| `textColor` | `string` |  text hex color code. **Default:** `#FFFFFF`|
+| `format` | `string` |  `12h` or `24h` **Default:** `12h`|
 
 
